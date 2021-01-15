@@ -1,9 +1,10 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin")
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
 module.exports = {
+  mode: 'development',
 	entry: {
-		index: "./src/pages/index/index.js",
+		index: './src/pages/index/index.js',
   },
   module: {
     rules: [
@@ -19,18 +20,17 @@ module.exports = {
       }
     ]
   },
-  output: {
-    filename: "[name]/[name].bundle.js",
-    publicPath: "/"
-  },
-  mode: "development",
-  devtool: "inline-source-map",
+  devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      chunks: ["index"],
+      chunks: ['index'],
       inject: false,
-      filename: "index.html",
-      template: "src/pages/index/index.html",
+      filename: 'index.html',
+      template: 'src/pages/index/index.html',
     }),
-  ]
+  ],
+  output: {
+    filename: '[name].bundle.js',
+    publicPath: '/'
+  },
 }
