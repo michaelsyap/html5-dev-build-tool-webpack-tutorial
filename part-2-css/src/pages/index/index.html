@@ -10,9 +10,13 @@
     <%= htmlWebpackPlugin.tags.headTags %>
   </head>
   <body class="home">
-    <h1 class="greeting">
-      Hello World! This is the home page!
-    </h1>
+
+    <div class="bg-white rounded border-green-400 border-4 max-w-lg mt-8 p-8 mx-auto">
+
+      <h1 class="greeting">
+        Hello World! This is the home page!
+      </h1>
+    </div>
     
     <!-- This is where the JS tags go from the output of the chunks defined in "new HTMLWebpackPlugin" -->
     <%= htmlWebpackPlugin.tags.bodyTags %>
