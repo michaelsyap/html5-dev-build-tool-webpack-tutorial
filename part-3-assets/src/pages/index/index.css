@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.greeting {
+  font-size: rem($(greetingFontSize)px);
+  @mixin set-font-family;
+  color: $colorPrimary;
+  text-align: center;
+}
