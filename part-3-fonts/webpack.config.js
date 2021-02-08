@@ -19,6 +19,13 @@ module.exports = {
         }
       },
       {
+        //This is a regex of file extensions for fonts
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          'file-loader',
+        ],
+      },
+      {
         test: /\.css$/,
         use: [
           'style-loader',
