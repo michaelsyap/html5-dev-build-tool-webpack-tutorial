@@ -1,3 +1,4 @@
+const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 
@@ -17,6 +18,14 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+          }
+        ]
       },
       {
         //This is a regex of file extensions for fonts
@@ -44,6 +53,11 @@ module.exports = {
       template: 'src/pages/index/index.html',
     }),
   ],
+  resolve: {
+    alias: {
+      Assets: path.resolve(__dirname, "src/assets")
+    }
+  },
   output: {
     filename: '[name].bundle.js',
     publicPath: '/'
