@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: #fff url('Assets/images/bg.png') 0 0 repeat;
+}
+
 .greeting {
   font-size: rem($(greetingFontSize)px);
   @mixin set-font-family;
