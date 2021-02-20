@@ -1,11 +1,11 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-
 module.exports = {
   mode: 'development',
 	entry: {
 		index: './src/pages/index/index.js',
+		carousel: './src/pages/carousel/carousel.js'
   },
   module: {
     rules: [
@@ -51,6 +51,12 @@ module.exports = {
       inject: false,
       filename: 'index.html',
       template: 'src/pages/index/index.html',
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ['carousel'],
+      inject: false,
+      filename: 'carousel.html',
+      template: 'src/pages/carousel/carousel.html',
     }),
   ],
   resolve: {

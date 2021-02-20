@@ -30,11 +30,14 @@
     "webpack": "^5.12.3",
     "webpack-dev-middleware": "^4.0.2"
   },
-  "dependencies": {},
+  "dependencies": {
+    "swiper": "^6.4.15"
+  },
   "browserslist": [
     "last 2 versions",
     "> 1%",
     "iOS >= 8",
     "Safari >= 8"
-  ]
+  ],
+  "sideEffects": ["*.css"]
 }
