@@ -39,5 +39,7 @@
     "iOS >= 8",
     "Safari >= 8"
   ],
-  "sideEffects": ["*.css"]
+  "sideEffects": [
+    "*.css"
+  ]
 }

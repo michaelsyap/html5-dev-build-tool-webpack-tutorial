@@ -1,7 +1,3 @@
-body {
-  background: #fff url('Assets/images/bg.png') 0 0 repeat;
-}
-
 .page-title {
   @apply text-3xl;
   @mixin set-font-family;

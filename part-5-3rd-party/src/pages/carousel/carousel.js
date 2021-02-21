@@ -45,5 +45,4 @@ const CarouselPage = (function() {
 document.addEventListener('DOMContentLoaded', function onDOMLoad() {
   const websiteGlobal = WebsiteGlobal.getInstance()
   const carouselPage = CarouselPage.getInstance()
-
 })

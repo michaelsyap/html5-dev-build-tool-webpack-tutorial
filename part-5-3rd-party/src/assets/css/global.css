@@ -38,3 +38,7 @@
   font-display: swap;
 }
 
+
+body {
+  background: #fff url('Assets/images/bg.png') 0 0 repeat;
+}
