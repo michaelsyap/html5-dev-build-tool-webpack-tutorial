@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Carousel | HTML5 Development Server & Build Tool With Webpack</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- This is where the CSS tags go from the output of the chunks defined in "new HTMLWebpackPlugin" -->
+    <link href="./css/commons.css" rel="stylesheet"><link href="./css/carousel.css" rel="stylesheet">
+  </head>
+  <body class="carousel">
+    <header class="max-w-lg mx-auto">
+      <div class="w-24 mx-auto">
+        <img src="img/09a1a1112c577c2794359715edfcb5ac.png">
+      </div>
+    </header>
+
+    <h1 class="page-title">Carousel Demo</h1>
+    
+    <div class="demo-carousel">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="carousel-demo-slide">
+            <img data-src="img/5b6888d6cc3614b01d23fdfba98224ad.jpg" class="swiper-lazy" class="image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="carousel-demo-slide">
+            <img data-src="img/c48b938dc6858ba30f24e3b2c07a5142.jpg" class="swiper-lazy" class="image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="carousel-demo-slide">
+            <img data-src="img/ffd0fadee8dbd2fcbefa372baba72474.jpg" class="swiper-lazy" class="image">
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination swiper-pagination-white"></div>
+    </div>
+
+
+    <!-- This is where the JS tags go from the output of the chunks defined in "new HTMLWebpackPlugin" -->
+    <script src="./js/vendors.bundle.js"></script><script src="./js/carousel.bundle.js"></script>
+  </body>
+</html>
